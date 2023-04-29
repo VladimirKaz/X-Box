@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>X-Box</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="header__logo-box">
+                <a class="header__link-logo" href="#">
+                    <img class="header__logo" src="img/header/logo.svg" alt="logo x-box">
+                </a>
+            </div>
+            <ul class="header__menu-list">
+                <li class="dropdown">
+                    <a class="dropbtn">Games</a>
+                    <div class="dropdown-items">
+                        <a href="#">Game 1</a>
+                        <a href="#">Game 2</a>
+                        <a href="#">Game 3</a>
+                    </div>
+                    
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropbtn">Consoles</a>
+                    <div class="dropdown-items">
+                        <a href="#">Game 1</a>
+                        <a href="#">Game 2</a>
+                        <a href="#">Game 3</a>
+                    </div>
+                </li>
+                
+                <li class="dropdown">
+                    <a class="dropbtn">Community</a>
+                    <div class="dropdown-items">
+                        <a href="#">Game 1</a>
+                        <a href="#">Game 2</a>
+                        <a href="#">Game 3</a>
+                    </div>
+                </li>  
+                
+                <input class="header__menu-search" type="text" placeholder="Search">
+
+                <li class="header__menu-item header__menu-item--user">
+                    <a class="header__menu-user" href="#"><img src="img/header/user.svg" alt="user icon"></a>
+                    <a class="header__menu-user" href="#">My&nbspXBOX</a> 
+                    <a href="#"><img src="img/header/dwn-arrow.svg" alt="nav arrow"></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="carousel">
+        <div class="carousel-wrapper">
+            <button class="carousel-btn next" onclick="onNext();"><img src="img/carousel/icon-prev.svg" alt="arrow-left"></button>
+            <button class="carousel-btn prev" onclick="onPrev();"><img src="img/carousel/icon-next.svg" alt="arrow-right"></button>
+            <ul class="slides">
+                <li class="slides__item" data-active>
+                    <img class="slides__item-img" src="img/carousel/btl-fr.jpg" alt="img x-box">
+                    <div class="slides__item-text">
+                        <h2 class="">Star Wars1</h2>
+                        <p class="">Battlefront II</p>
+                    </div>
+                    <div class="slides__item-link-box">
+                        <a class="slides__link" href="#">Watch Trailer</a>
+                        <a class="slides__link" href="#">Explore Games</a>
+                    </div>
+                </li>
+                
+                <li class="slides__item">
+                    <img class="slides__item-img" src="img/carousel/btl-fr.jpg" alt="img x-box">
+                    <div class="slides__item-text">
+                        <h2 class="">Star Wars2</h2>
+                        <p class="">Battlefront II</p>
+                    </div>  
+                    
+                    <div class="slides__item-link-box">
+                        <a class="slides__link" href="#">Watch Trailer</a>
+                        <a class="slides__link" href="#">Explore Games</a>
+                    </div>
+                </li>
+                <li class="slides__item">
+                    <img class="slides__item-img" src="img/carousel/btl-fr.jpg" alt="img x-box">
+                    <div class="slides__item-text">
+                        <h2 class="">Star Wars3</h2>
+                        <p class="">Battlefront II</p>
+                    </div>
+
+                    <div class="slides__item-link-box">
+                        <a class="slides__link" href="#">Watch Trailer</a>
+                        <a class="slides__link" href="#">Explore Games</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="highlights">
+        <div class="highlights-wrapper">
+            <div class="highlights__header-box">
+                <img class="highlights__box-icon" src="img/hightlights/xbox-icon.svg " alt="x-box-logo">
+                <h2 class="highlights__header">The best value</h2>
+                <p class="highlights__text">in games and entertainment</p>
+            </div>
+            <ul class="highlights__list">
+                <li class="highlights__list-item">
+                    <div class="highlights__item-box-img">
+                        <img src="img/hightlights/xbox-one-x.png" alt="item img">
+                    </div>
+                    <div class="highlights__item-box-text">
+                        <h2 class="highlights__list__header">XBOX ONE X</h2>
+                        <p class="highlights__list__text">Faster Processing <br>
+                        Smoother Gameplay
+                        </p>
+                        <a class="highlights__list-link" href="#">Explore Consoles & Accessories</a>
+                    </div>
+                </li>
+                <li class="highlights__list-item">
+                    <div class="highlights__item-box-img highlights__item-box-img-fixed">
+                        <img src="img/hightlights/mixer-logo.svg" alt="item img">
+                    </div>
+                    <div class="highlights__item-box-text">
+                        <h2 class="highlights__list__header">mixer Streaming</h2>
+                        <p class="highlights__list__text">The Next Generation
+                            Of Life Game Streaming
+                        </p>
+                        <a class="highlights__list-link" href="#">Start Watching mixer</a>
+                    </div>
+                </li>
+                <li class="highlights__list-item">
+                    <div class="highlights__item-box-img highlights__item-box-img-fixed">
+                        <img src="img/hightlights/gold-game.svg" alt="item img">
+                    </div>
+                    <div class="highlights__item-box-text">
+                        <h2 class="highlights__list__header">Free Games Every Month</h2>
+                        <p class="highlights__list__text">Get up to $700 in 
+                            free games
+                        </p>
+                        <a class="highlights__list-link" href="#">Get Free Games</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="games">
+        <div class="games__wrapper">
+            <div class="games__header-box">
+                <h2 class="games__header">Exclusive games on XBOX</h2>
+            </div>
+            <div class="games__list-box-wrapper">
+                <ul class="games__list">
+                    <li class="games__list-item">
+                        <div class="games__item-img-box">
+                            <img src="img/games/cod.png" alt="img game">
+                        </div>
+                        <div class="games__item-text-box">
+                            <h3 class="games__item-box-header">Call of Duty: WWII</h3>
+                            <p class="games__item-box-text">The C.O.D.E. Bravery Pack
+                                is now available in WWII
+                            </p>
+                        </div>
+                        <div class="games__item-box-link">
+                            <a class="" href="#">See Details</a>
+                        </div>
+                    </li>
+                    <li class="games__list-item">
+                        <div class="games__item-img-box">
+                            <img src="img/games/dest2.png" alt="img game">
+                        </div>
+                        <div class="games__item-text-box">
+                            <h3 class="games__item-box-header">Destiny 2</h3>
+                            <p class="games__item-box-text">Lorem ipsum dolor sit amet 
+                                consectetur adipisicing elit. Eligendi.
+                            </p>
+                        </div>
+                        <div class="games__item-box-link">
+                            <a class="" href="#">See Details</a>
+                        </div>
+                    </li>
+                    <li class="games__list-item">
+                        <div class="games__item-img-box">
+                            <img src="img/games/steep.png" alt="img game">
+                        </div>
+                        <div class="games__item-text-box">
+                            <h3 class="games__item-box-header">STEEP</h3>
+                            <p class="games__item-box-text">
+                                Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Vitae.
+                            </p>
+                        </div>
+                        <div class="games__item-box-link">
+                            <a class="" href="#">See Details</a>
+                        </div>
+                    </li>
+                    <li class="games__list-item">
+                        <div class="games__item-img-box">
+                            <img class="" src="img/games/forza.png" alt="img game"
+                            style="height: 180px;">
+                        </div>
+                        <div class="games__item-text-box">
+                            <h3 class="games__item-box-header">Forza Motorsport 7</h3>
+                            <p class="games__item-box-text">
+                                Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Vitae.
+                            </p>
+                        </div>
+                        <div class="games__item-box-link">
+                            <a class="" href="#">See Details</a>
+                        </div>
+                    </li>
+                    <li class="games__list-item">
+                        <div class="games__item-img-box">
+                            <img src="img/games/steep.png" alt="img game">
+                        </div>
+                        <div class="games__item-text-box">
+                            <h3 class="games__item-box-header">STEEP</h3>
+                            <p class="games__item-box-text">
+                                Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Vitae.
+                            </p>
+                        </div>
+                        <div class="games__item-box-link">
+                            <a class="" href="#">See Details</a>
+                        </div>
+                    </li>
+                    <li class="games__list-item">
+                        <div class="games__item-img-box">
+                            <img src="img/games/cod.png" alt="img game">
+                        </div>
+                        <div class="games__item-text-box">
+                            <h3 class="games__item-box-header">Call of Duty: WWII</h3>
+                            <p class="games__item-box-text">The C.O.D.E. Bravery Pack
+                                is now available in WWII
+                            </p>
+                        </div>
+                        <div class="games__item-box-link">
+                            <a class="" href="#">See Details</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="games__btn-store-box">
+                <a class="games__btn-store-link" href="#">XBOX Store</a>
+            </div>
+        </div>
+    </section>
+    <section class="design-lab">
+        <div class="design-lab__wrapper">
+            <div class="design-lab__head-box">
+                <h2 class="design-lab__header">Xbox Design Lab</h2>
+                <p class="design-lab__head-text">
+                    Make yours one in a billion with new colors,<br>
+                     metallic finishes and rubberized grips.
+                </p>
+                <div class="design-lab__link-box">
+                    <a class="design-lab__link" href="#">Design Yours</a>
+                    <a class="design-lab__link" href="#">Explore Consoles & Accessories</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__info-box">
+                <ul class="footer__info-list">
+                    <li class="footer__info-item">
+                        <h3 class="footer__info-list-header">XBOX</h3>
+                        <a class="footer__info-list-link" href="#">Support</a>
+                        <a class="footer__info-list-link" href="#">Contact us</a>
+                        <a class="footer__info-list-link" href="#">Privacy & cookies </a>
+                        <a class="footer__info-list-link" href="#">Terms of use </a>
+                    </li>
+
+                    <li class="footer__info-item">
+                        <h3 class="footer__info-list-header">Developers</h3>
+                        <a class="footer__info-list-link" href="#">Games</a>
+                        <a class="footer__info-list-link" href="#">Windows 10</a>
+                        <a class="footer__info-list-link" href="#">Creators Program</a>
+                        <a class="footer__info-list-link" href="#">Designed for XBOX</a>
+                    </li>
+
+                    <li class="footer__info-item">
+                        <h3 class="footer__info-list-header">Follow Us</h3>
+
+                        <div class="footer__info-item-contacts-box">
+                            <a class="footer__info-link" target="_blank" href="#"><img src="/img/footer/facebook.svg" alt="facebook"></a>
+                            <a class="footer__info-link" target="_blank" href="#"><img src="/img/footer/twitter.svg" alt="twiter"></a>
+                            <a class="footer__info-link" target="_blank" href="#"><img src="/img/footer/instagram.svg" alt="instagram"></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__line"></div>
+
+            <div class="footer__copyright">
+                <a class="footer__info-list-link" href="#">English (United States)</a>
+                <p>
+                    © Microsoft 2017
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
